@@ -26,12 +26,11 @@ const PokeCard = ({url,name}) => {
         return PokeData;
     }
 
-    const bg = `bg-${pokemon?.type}`;
-    const border = `border-${pokemon?.type}`;
-    const text = `text-${pokemon?.type}`;
-
-    const img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon?.id}.png`;
-
+    const bg = `bg-${pokemon?.type}`
+    const border = `border-${pokemon?.type}`
+    const text = `text-${pokemon?.type}`
+    const img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon?.id}.png`
+  
     return (
       <>
         {pokemon && (
