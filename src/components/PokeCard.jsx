@@ -38,8 +38,8 @@ const PokeCard = ({ url, name }) => {
   return (
     <>
       {pokemon && (
-        <a
-          href={`/pokemon/${name}`} 
+        <Link
+          to={`/pokemon/${name}`} 
           className={`bg-slate-900 box-border rounded-lg ${border} w-[8.5rem] h-[8.5rem] z-0 justify-between items-center`}
         >
           <div
@@ -59,7 +59,7 @@ const PokeCard = ({ url, name }) => {
           >
             {pokemon.name}
           </div>
-        </a>
+        </Link>
       )}
     </>
   );
