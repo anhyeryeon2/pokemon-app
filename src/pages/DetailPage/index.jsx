@@ -9,6 +9,7 @@ import Type from "../../components/Type";
 import { Link } from "react-router-dom";
 import {Balance} from "../../assets/Balance";
 import {Vector} from "../../assets/Vector";
+import BaseStat from "../../components/BaseStat";
 
 const DetailPage =() =>{
     const [isLoading, setIsLoading] = useState(false)
@@ -170,13 +171,13 @@ const DetailPage =() =>{
                 </div>
                 <h2 className={`text-base font-semibold ${text}`}>기본 능력치</h2>
                 <div className="w-full">
-                  {/* <table>
+                  <table className="m-auto">
                     <tbody>
                       {pokemon.stats.map((stat) => (
                         <BaseStat key={stat.name} valueStat={stat.baseStat} nameStat={stat.name} type={pokemon.types[0]} />
                       ))}
                     </tbody>
-                  </table> */}
+                  </table>
                 </div>
     
                 {/* <h2 className={`text-base font-semibold ${text}`}>설명</h2>
